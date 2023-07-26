@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Eczar");
+
+.header {
+  background-color: #550d07;
+  width: 100vw;
+  height: 50vh;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .header {
+    width: 100vw; 
+    height: 25vh; 
+  }
+}
+
+
+
+h1, h2 {
+  font-family: 'Eczar', 'sans-serif';
+  font-weight: bold;
+}
+
+h1 {
+  color: #f2dfce;
+}
+
+h2 {
+  color: #3f220f;
+}
+
+h3,
+p {
+  color: #353238;
+}
+
+body {
+  background-color: #f2dfce;
+}
