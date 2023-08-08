@@ -29,12 +29,13 @@ nav li a:hover {
   height: 75vh;
   display: flex; 
   flex-direction: column;
-  justify-content:left;
+  justify-content:center;
   align-items: center;
+  text-align: center;
 }
 
 .globe {
-  padding: 1vw; 
+  padding: 0.5vw; 
   max-width:20%;
   height:auto;
 }
@@ -43,13 +44,22 @@ nav li a:hover {
 .section_header {
   background-color: #be7c4d;
   width: 100vw;
-  height: 30vh;
-  text-align: center;
+  height: 35vh;
+  display: flex; 
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
 }
 
-.sub_header_img { 
-  padding: 1.75vw; 
+.section_header img {
+  padding: 1vw; 
   max-width:15%;
+  height:auto;
+}
+
+.sub_page_img { 
+  padding: 1.75vw; 
+  max-width:10%;
   height:auto;
 }
 
@@ -89,7 +99,7 @@ body {
 }
 
 /* Rules for when the window's width exceeds 650 px: */
-@media (min-width: 700px) {
+@media (min-width: 650px) {
   nav {
     flex-direction: row;
   }
@@ -97,6 +107,7 @@ body {
   nav li{
     list-style-type: none;
     display:inline;
+    /*TO DO: fix padding*/ 
     padding: 0.5vw 2.5vw;  
     font-size: 1.25em; 
   }
@@ -106,13 +117,23 @@ body {
     flex-direction: row;
   }
 
-  .section_header{
-    height: 30vh;
-  }
-
   .globe {
     padding: 5vw;
     max-width: 15%; 
+  }
+
+  .sub_page_img {
+    padding: 5vw;
+    max-width: 5%; 
+  }
+
+  .section_header{
+    height: 25vh;
+  }
+
+  .section_header img {
+    padding: 5vw;
+    max-width: 10%;
   }
 
   h1 {
