@@ -1,24 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Eczar");
 
-nav { 
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  align-items: center;
-  flex-wrap: wrap;
+* {
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Eczar', 'sans-serif';
+  overflow-wrap: break-word;
+}
+
+nav {
   background-color: #be7c4d;
-  width: 100vw; 
-  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25vw;
 }
 
-nav li{
-  list-style-type: none;
-  display: block;
-  padding: 1vw;  
-  font-size: 0.25em; 
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0.25vw 3vw;
 }
 
-nav li a:hover {
+nav ul li a{
+  color: #550d07;  
+}
+
+nav ul li a:hover {
   background-color:#550d07;
   color:#f2dfce; 
 }
@@ -68,11 +75,6 @@ h1, h2 {
   font-weight: bold;
 }
 
-h1, h2, h3, p {
-  font-family: 'Eczar', 'sans-serif';
-  overflow-wrap: break-word;
-}
-
 h1 {
   color: #f2dfce;
   font-size: 0.75em; 
@@ -91,6 +93,10 @@ p {
   padding: 3vw;
 }
 
+li {
+  font-size: 0.25em; 
+}
+
 /* The body of the website: */ 
 body {
   background-color: #f2dfce;
@@ -99,18 +105,17 @@ body {
 }
 
 /* Rules for when the window's width exceeds 650 px: */
-@media (min-width: 650px) {
+@media (min-width: 900px) {
   nav {
-    flex-direction: row;
+    height: 10vh; 
   }
-  
-  nav li{
-    list-style-type: none;
-    display:inline;
-    /*TO DO: fix padding*/ 
-    padding: 0.5vw 2.5vw;  
-    font-size: 1.25em; 
-  }
+  nav ul li{
+    padding: 0.5vw;  
+    font-size: 2em; 
+  }  
+}
+
+@media (min-width: 650px) {
 
   .header {
     height: 35vh; 
@@ -124,7 +129,7 @@ body {
 
   .sub_page_img {
     padding: 5vw;
-    max-width: 5%; 
+    max-width: 8%; 
   }
 
   .section_header{
@@ -147,5 +152,9 @@ body {
 
   p {
     font-size: 1.25em; 
+  }
+
+  li {
+    font-size: 1.25em;
   }
 }
