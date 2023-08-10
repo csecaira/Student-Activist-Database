@@ -15,13 +15,13 @@ nav {
   padding: 0.25vw;
 }
 
-nav ul li{
+nav ul li {
   list-style: none;
   display: inline-block;
   margin: 0.25vw 3vw;
 }
 
-nav ul li a{
+nav ul li a {
   color: #550d07;  
 }
 
@@ -33,11 +33,11 @@ nav ul li a:hover {
 .header {
   background-color: #550d07;
   width: 100vw;
-  height: 75vh;
+  height: 60vh;
   display: flex; 
   flex-direction: column;
-  justify-content:center;
   align-items: center;
+  justify-content:center;
   text-align: center;
 }
 
@@ -51,7 +51,7 @@ nav ul li a:hover {
 .section_header {
   background-color: #be7c4d;
   width: 100vw;
-  height: 35vh;
+  height: 40vh;
   display: flex; 
   flex-direction: column;
   justify-content:center;
@@ -87,14 +87,13 @@ h2 {
   padding: 1vw;
 }
 
-p {
+p, li { 
+  font-size: 0.25em;
   color: #353238;
-  font-size: 0.25em; 
-  padding: 3vw;
 }
 
-li {
-  font-size: 0.25em; 
+p {
+  padding: 3vw;
 }
 
 /* The body of the website: */ 
@@ -104,7 +103,7 @@ body {
   padding: 0; 
 }
 
-/* Rules for when the window's width exceeds 650 px: */
+/* Rules for when the window's width exceeds 900 px: */
 @media (min-width: 900px) {
   nav {
     height: 10vh; 
@@ -115,8 +114,8 @@ body {
   }  
 }
 
+/* Rules for when the window's width exceeds 650 px: */
 @media (min-width: 650px) {
-
   .header {
     height: 35vh; 
     flex-direction: row;
@@ -129,7 +128,7 @@ body {
 
   .sub_page_img {
     padding: 5vw;
-    max-width: 8%; 
+    max-width: 10%; 
   }
 
   .section_header{
@@ -150,11 +149,7 @@ body {
     padding: 2vw;
   }
 
-  p {
+  p, li {
     font-size: 1.25em; 
-  }
-
-  li {
-    font-size: 1.25em;
   }
 }
