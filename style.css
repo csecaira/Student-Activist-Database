@@ -96,6 +96,14 @@ p {
   padding: 3vw;
 }
 
+/* Changing the button appearance: */
+button {
+  background-color:#be7c4d;
+  color:#f2dfce;  
+  border: none;
+  padding: 1.5vw 2vw;  
+}
+
 /* The body of the website: */ 
 body {
   background-color: #f2dfce;

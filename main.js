@@ -11,8 +11,8 @@ function buttonActions() {
         let addingInfo = document.createElement('p');
         addingInfo.innerHTML = "To add a resource to this website, please email " +
         "crystalsecaira@gmail.com with the following information: <br> " +
-        "Category of the resource (Relocation, Emergency Grant, Non-Emergency Grant) <br>" +
-        "Name of the resource <br> Link to the Resource <br> Other info (optional)"; 
+        "<br> 1) Category of the resource (Relocation, Emergency Grant, Non-Emergency Grant) <br>" +
+        "2) Name of the resource <br> 3) Link to the Resource <br> 4) Other info (optional)"; 
         document.getElementById('buttonInfo').appendChild(addingInfo); 
         
         /* num becomes 1, so the p tag doesn't 
