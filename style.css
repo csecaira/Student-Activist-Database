@@ -25,13 +25,15 @@ nav ul li a {
   color: #550d07;  
 }
 
-nav ul li a:hover {
+nav ul li a:hover, .header {
   background-color:#550d07;
+}
+
+nav ul li a:hover {
   color:#f2dfce; 
 }
 
 .header {
-  background-color: #550d07;
   width: 100vw;
   height: 60vh;
   display: flex; 
@@ -47,7 +49,7 @@ nav ul li a:hover {
   height:auto;
 }
 
-/* Adding design to the sections */ 
+/* Adding design to the sections: */ 
 .section_header {
   background-color: #be7c4d;
   width: 100vw;
@@ -64,13 +66,14 @@ nav ul li a:hover {
   height:auto;
 }
 
+/* Formatting subpages' header images: */
 .sub_page_img { 
   padding: 1.75vw; 
   max-width:10%;
   height:auto;
 }
 
-/* Changing heading and paragraphs */
+/* Changing heading and paragraphs: */
 h1, h2 {
   font-weight: bold;
 }
@@ -84,7 +87,11 @@ h2 {
   color: #3f220f;
   text-align: start;
   font-size: 0.5em; 
-  padding: 1vw;
+  padding:1.5vw;
+}
+
+.sub_intro_text {
+  text-align: center;
 }
 
 p, li { 
@@ -93,7 +100,7 @@ p, li {
 }
 
 p {
-  padding: 3vw;
+  padding: 1vw 4vw;
 }
 
 /* Changing the button appearance: */
@@ -104,6 +111,10 @@ button {
   padding: 1.5vw 2vw;  
 }
 
+#button_text {
+  text-align: center;
+}
+
 /* The body of the website: */ 
 body {
   background-color: #f2dfce;
@@ -111,8 +122,8 @@ body {
   padding: 0; 
 }
 
-/* Rules for when the window's width exceeds 900 px: */
-@media (min-width: 900px) {
+/* Rules for when the window's width exceeds 950 px: */
+@media (min-width: 1130px) {
   nav {
     height: 10vh;  
   }
@@ -129,13 +140,15 @@ body {
     flex-direction: row;
   }
 
+  .globe, .sub_page_img, .section_header img {
+    padding: 5vw; 
+  }
+  
   .globe {
-    padding: 5vw;
     max-width: 15%; 
   }
 
   .sub_page_img {
-    padding: 5vw;
     max-width: 10%; 
   }
 
@@ -144,7 +157,6 @@ body {
   }
 
   .section_header img {
-    padding: 5vw;
     max-width: 10%;
   }
 
