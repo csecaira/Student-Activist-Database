@@ -9,10 +9,10 @@
 
 nav {
   background-color: #be7c4d;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.25vw;
 }
 
 nav ul li {
@@ -82,7 +82,7 @@ h1 {
 
 h2 {
   color: #3f220f;
-  text-align: center;
+  text-align: start;
   font-size: 0.5em; 
   padding: 1vw;
 }
@@ -114,7 +114,7 @@ body {
 /* Rules for when the window's width exceeds 900 px: */
 @media (min-width: 900px) {
   nav {
-    height: 10vh; 
+    height: 10vh;  
   }
   nav ul li{
     padding: 0.5vw;  
